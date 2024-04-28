@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: rgb(171, 243, 243);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    text-align: center;
+  }
+  .content {
+    margin: 10% auto;
+    padding: 0;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    height: 400px;
+    width: 600px;
+    overflow: hidden;
+    border: 1px saddlebrown solid;
+    box-shadow: 20px hsl(0, 0%, 3%);
+    z-index: -1;
+  }
+  .show {
+    padding: 10%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    width: fit-content;
+  }
+  
+  .slide_content {
+    float: left;
+    width: 600px;
+    height: 300px;
+  }
+  .slides {
+    width: 2400px;
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+    animation-play-state: running;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slide_content:nth-child(1) {
+    background: rgb(247, 173, 210);
+    z-index: 1;
+  }
+  
+  .slide_content:nth-child(2) {
+    background: hsl(108, 100%, 88%);
+  }
+  
+  .slide_content:nth-child(3) {
+    background: rgb(226, 192, 192);
+  }
+  
+  .slide_content:nth-child(4) {
+    background: rgb(236, 236, 149);
+  }
+  
+  @keyframes slide {
+    20% {
+      margin-left: 0px;
+    }
+  
+    40% {
+      margin-left: calc(-600px * 1);
+    }
+  
+    60% {
+      margin-left: calc(-600px * 2);
+    }
+  
+    80% {
+      margin-left: calc(-600px * 3);
+    }
+  }
+ 
+
+.slider {
+    width: 500px;
+    height: 300px;
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .image-container {
+    width: 200px;
+    background-color: pink;
+    height: 300px;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+  }
+  .slide {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+  }
+  #slide-1:target ~ .image-container {
+    left: 0px;
+  }
+  #slide-2:target ~ .image-container {
+    left: -500px;
+  }
+  #slide-3:target ~ .image-container {
+    left: -1000px;
+  }
+  .buttons {
+    position: relative;
+    top: -20px;
+  }
+  .buttons a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: lightgreen;
+  }
+
+
+
+
+  @import url(https://fonts.googleapis.com/css?family=Lato);
+  
+  .accordion {
+    width: 895px; height: 300px;
+    overflow: hidden;
+    box-shadow: 0 10px 6px -6px #111;
+    margin: 20px auto
+  }
+  .accordion ul { width: 200% }
+  
+  .accordion li {
+    position: relative;
+    display: block;
+    width: 250px;
+    float: left;
+    transition: all 0.4s ease .300ms;
+  }
+  
+  .accordion ul:hover li {width: 40px }
+  .accordion ul li:hover {width: 440px }
+  
+  .caption {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;	
+    width: 640px
+  }
+  
+  .caption a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font: normal 16px 'Lato', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    padding: 15px;
+  }
+   
+  #gif{
+    left: 63px;
+  width: 43px;
+  }
